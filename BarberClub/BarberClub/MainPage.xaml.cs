@@ -9,9 +9,15 @@ namespace BarberClub
 {
 	public partial class MainPage : ContentPage
 	{
+        
 		public MainPage()
 		{
 			InitializeComponent();
+
+            var assembly = typeof(MainPage);
+            mainLogo.Source = ImageSource.FromResource("BarberClub.Assets.Images.logo.png", assembly);
 		}
-	}
+    }
+
+    
 }

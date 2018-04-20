@@ -2,10 +2,21 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:BarberClub"
-             x:Class="BarberClub.MainPage">
-
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
+             x:Class="BarberClub.MainPage"
+             x:Name="mainPageId">
+  <StackLayout Margin="20"
+               VerticalOptions="Center">
+    <Image x:Name="mainLogo"
+           Aspect="AspectFit"
+           HorizontalOptions="FillAndExpand"/>
+    <Label Text="Welcome to The BarberClub"
+           VerticalOptions="Center"
            HorizontalOptions="Center" />
-
+    <Entry x:Name="loginUsername"
+           Placeholder="Username" />
+    <Entry x:Name="loginPassword"
+           Placeholder="Password"
+           IsPassword="True" />
+    <Button Text="Login" />
+  </StackLayout>
 </ContentPage>
